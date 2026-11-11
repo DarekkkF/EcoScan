@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ecoscan_main_bg"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="28dp"
+        android:paddingBottom="30dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ECOSCAN  /  PANEL IOT"
+            android:textColor="#8DCEAA"
+            android:textSize="11sp"
+            android:letterSpacing="0.16"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Estación Ambiental"
+            android:textColor="#F4FBF5"
+            android:textStyle="bold"
+            android:textSize="29sp" />
+        <TextView
+            android:id="@+id/tvConexion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="24dp"
+            android:text="●  Conectando con Firebase..."
+            android:textColor="#B7D8C6"
+            android:textSize="13sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/ecoscan_accent_card"
+            android:padding="22dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ÍNDICE DE CONFORT"
+                android:textColor="#CEEDDB"
+                android:letterSpacing="0.12"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tvConfort"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:text="-- / 100"
+                android:textColor="#FFFFFF"
+                android:textSize="42sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tvEstadoConfort"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Esperando lecturas"
+                android:textColor="#E5F7EB"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="13dp"
+            android:text="Sensores en tiempo real"
+            android:textColor="#F1FBF5"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="132dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="7dp"
+                android:background="@drawable/ecoscan_station_card"
+                android:orientation="vertical"
+                android:padding="17dp">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="◉  TEMPERATURA" android:textColor="#F9BD90" android:textStyle="bold" android:textSize="11sp" />
+                <TextView android:id="@+id/tvTemperatura" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="23dp" android:text="-- °C" android:textColor="#FFFFFF" android:textStyle="bold" android:textSize="25sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="132dp"
+                android:layout_weight="1"
+                android:layout_marginStart="7dp"
+                android:background="@drawable/ecoscan_station_card"
+                android:orientation="vertical"
+                android:padding="17dp">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="◉  HUMEDAD" android:textColor="#91DDF6" android:textStyle="bold" android:textSize="11sp" />
+                <TextView android:id="@+id/tvHumedad" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="23dp" android:text="-- %" android:textColor="#FFFFFF" android:textStyle="bold" android:textSize="25sp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="132dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="7dp"
+                android:background="@drawable/ecoscan_station_card"
+                android:orientation="vertical"
+                android:padding="17dp">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="◉  LUMINOSIDAD" android:textColor="#F7D988" android:textStyle="bold" android:textSize="11sp" />
+                <TextView android:id="@+id/tvLuz" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="23dp" android:text="--" android:textColor="#FFFFFF" android:textStyle="bold" android:textSize="25sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="132dp"
+                android:layout_weight="1"
+                android:layout_marginStart="7dp"
+                android:background="@drawable/ecoscan_station_card"
+                android:orientation="vertical"
+                android:padding="17dp">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="◉  GAS MQ-2" android:textColor="#CEA9F8" android:textStyle="bold" android:textSize="11sp" />
+                <TextView android:id="@+id/tvGas" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="23dp" android:text="--" android:textColor="#FFFFFF" android:textStyle="bold" android:textSize="25sp" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="13dp"
+            android:text="Control de dispositivo"
+            android:textColor="#F1FBF5"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="18dp"
+            android:background="@drawable/ecoscan_station_card">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ACTUADOR  /  LED"
+                android:textColor="#91CFAE"
+                android:letterSpacing="0.1"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tvEstadoLed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="LED: sin confirmación"
+                android:textColor="#F2F8F4"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btnEncender"
+                    android:layout_width="0dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="7dp"
+                    android:text="Encender"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:textColor="#174A35"
+                    android:backgroundTint="#B6E0CA" />
+                <Button
+                    android:id="@+id/btnApagar"
+                    android:layout_width="0dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="7dp"
+                    android:text="Apagar"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:textColor="#EFF7F1"
+                    android:backgroundTint="#365B4E" />
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnSalir"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="26dp"
+            android:text="Cerrar sesión"
+            android:textAllCaps="false"
+            android:textColor="#E1F1E7"
+            android:textStyle="bold"
+            android:backgroundTint="#29473F" />
+    </LinearLayout>
+</ScrollView>

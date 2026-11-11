@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "269030619646",
+    "project_id": "monitoreoambientaliot-dc630",
+    "storage_bucket": "monitoreoambientaliot-dc630.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:269030619646:android:5bd74963c13942964fe8af",
+        "android_client_info": {
+          "package_name": "com.example.monitoreoambiental"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVCz6aEJyxGEonzWVUk_zFm13Wyup6VLw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
